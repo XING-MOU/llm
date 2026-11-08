@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: xing
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: gemma3:1b
+    dashscope:
+      api-key: your_api-key
+    chat:
+      memory:
+        repository:
+          jdbc:
+            platform: mysql
+            initialize-schema: never
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_ai_db2?useUnicode=true&characterEncoding=UTF-8  # 记得改成你自己的
+    username: root  # 记得改成你自己的
+    password: root  # 记得改成你自己的
+    driver-class-name: com.mysql.cj.jdbc.Driver
