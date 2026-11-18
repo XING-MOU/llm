@@ -1,6 +1,8 @@
 spring:
   application:
     name: xing
+  profiles:
+    active: local
   ai:
     ollama:
       base-url: http://localhost:11434

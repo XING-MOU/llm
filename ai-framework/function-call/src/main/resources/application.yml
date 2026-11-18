@@ -1,0 +1,14 @@
+server:
+  port: 8013
+spring:
+  application:
+    name: function-call
+  ai:
+    openai:
+      api-key: you_api_key
+      base-url: https://dashscope.aliyuncs.com/compatible-mode/
+      chat:
+        options:
+          model: qwen-plus
+          temperature: 0.7
+          maxTokens: 5000
